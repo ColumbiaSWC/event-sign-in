@@ -1,3 +1,8 @@
+hosted_url="https://columbiaswc.github.io/event-sign-in"
+
+
 cp index.html "$1.html"
 
 sed -i "s/{{ event_id }}/$2/g" $1.html
+
+echo "$hosted_url/$1.html"
